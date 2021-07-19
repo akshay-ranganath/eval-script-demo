@@ -29,9 +29,10 @@ Output:
 
 ```
 First file hash: 479ba08ecf4a09f98f4a9a4854d9ab1f
-Etag from cloudinary:479ba08ecf4a09f98f4a9a4854d9ab1f
+Etag from cloudinary: 479ba08ecf4a09f98f4a9a4854d9ab1f
 Second file hash: df7d123be9c16b855e16f127a6b2d261
-Etag from cloudinary:df7d123be9c16b855e16f127a6b2d261
+Etag from cloudinary: df7d123be9c16b855e16f127a6b2d261
+Image URL: https://res.cloudinary.com/dbmataac4/image/upload/v1626733581/f1.jpg
 ```
 
 In both the scripts, the first image to be uploaded is `f1.jpg`. 
