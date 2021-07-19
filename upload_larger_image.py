@@ -38,3 +38,4 @@ resp = cloudinary.uploader.upload(
 )
 # print the final dimensions
 print(f"From Cloudinary: Width={resp['width']}, height={resp['height']}")
+print(f'Image URL: {resp["secure_url"]}')

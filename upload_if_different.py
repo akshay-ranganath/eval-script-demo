@@ -17,8 +17,8 @@ resp = cloudinary.uploader.upload(
     overwrite=False,
     unique_filename=False
 )
-
-print(f'Etag from cloudinary:{resp["etag"]}')
+if 'etag' in resp:
+    print(f'Etag from cloudinary: {resp["etag"]}')
 
 file2_hash = get_hash('f2.jpg')
 print(f"Second file hash: {file2_hash}")
@@ -32,4 +32,5 @@ resp = cloudinary.uploader.upload(
     overwrite=False,
     eval = 'if(resource_info.etag !=\''+ file2_hash +'\') { upload_options["overwrite"]=true}'
 )
-print(f'Etag from cloudinary:{resp["etag"]}')
+print(f'Etag from cloudinary: {resp["etag"]}')
+print(f'Image URL: {resp["secure_url"]}')
